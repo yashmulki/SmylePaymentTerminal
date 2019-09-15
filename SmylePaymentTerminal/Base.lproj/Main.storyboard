@@ -1,0 +1,592 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="vbO-SF-3uh">
+    <device id="ipad9_7" orientation="landscape">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Prepayment View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="PrepaymentViewController" customModule="SmylePaymentTerminal" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view alpha="0.0" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="xXQ-Qb-4Kg" customClass="KDCircularProgress" customModule="SmylePaymentTerminal" customModuleProvider="target">
+                                <rect key="frame" x="262" y="134" width="500" height="500"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="trackColor">
+                                        <color key="value" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="progressInsideFillColor">
+                                        <color key="value" red="0.21960784310000001" green="0.73333333329999995" blue="0.56862745100000001" alpha="1" colorSpace="calibratedRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="startAngle">
+                                        <real key="value" value="-90"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="angle">
+                                        <real key="value" value="100"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="IBColor1">
+                                        <color key="value" red="1" green="0.82352941176470584" blue="0.078431372549019607" alpha="1" colorSpace="calibratedRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="IBColor2">
+                                        <color key="value" red="0.98624199628829956" green="0.7796865701675415" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <view alpha="0.69999999999999996" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="zqh-nm-r6u" customClass="contentView" customModule="SmylePaymentTerminal" customModuleProvider="target">
+                                <rect key="frame" x="306" y="333" width="412" height="102"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Please Look at the Camera" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WzO-CP-k6U">
+                                        <rect key="frame" x="21" y="33" width="370" height="36"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="30"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornRad">
+                                        <real key="value" value="25"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="color">
+                                        <color key="value" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <view clipsSubviews="YES" alpha="0.0" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="CiH-zN-5RH" customClass="contentView" customModule="SmylePaymentTerminal" customModuleProvider="target">
+                                <rect key="frame" x="330" y="201" width="365" height="365"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="color">
+                                        <color key="value" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornRad">
+                                        <real key="value" value="400"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.0" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="checkmark" translatesAutoresizingMaskIntoConstraints="NO" id="17I-zT-JtZ">
+                                <rect key="frame" x="437" y="309" width="150" height="150"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.0" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="crossmark" translatesAutoresizingMaskIntoConstraints="NO" id="l2E-RN-s7c">
+                                <rect key="frame" x="437" y="309" width="150" height="150"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.21960784310000001" green="0.73333333329999995" blue="0.56862745100000001" alpha="1" colorSpace="calibratedRGB"/>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="gK9-fY-C0U"/>
+                    <connections>
+                        <outlet property="checkmark" destination="17I-zT-JtZ" id="CbZ-ZE-8vH"/>
+                        <outlet property="crossmark" destination="l2E-RN-s7c" id="d0I-06-3rg"/>
+                        <outlet property="faceView" destination="CiH-zN-5RH" id="boD-8X-8bk"/>
+                        <outlet property="progressView" destination="xXQ-Qb-4Kg" id="DbF-t9-ntj"/>
+                        <outlet property="promptView" destination="zqh-nm-r6u" id="THm-T2-WZS"/>
+                        <outlet property="statusLabel" destination="WzO-CP-k6U" id="vkz-ka-HZw"/>
+                        <segue destination="mdJ-zv-kfx" kind="show" identifier="confirm" customClass="SlideLeftSegue" customModule="SmylePaymentTerminal" customModuleProvider="target" id="T2K-iy-Kzz"/>
+                        <segue destination="MIi-9s-QO6" kind="show" identifier="notrecog" customClass="SlideRightSegue" customModule="SmylePaymentTerminal" customModuleProvider="target" id="R1Q-dD-sN5"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="738.8671875" y="651.5625"/>
+        </scene>
+        <!--Not Recognized View Controller-->
+        <scene sceneID="cfd-yg-MTj">
+            <objects>
+                <viewController id="MIi-9s-QO6" customClass="NotRecognizedViewController" customModule="SmylePaymentTerminal" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="gSH-aa-09P">
+                        <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="We Couldn't Find Your Account" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YHA-pN-wqK">
+                                <rect key="frame" x="262" y="258" width="500" height="42"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="35"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Try Again" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jsG-xx-KD8">
+                                <rect key="frame" x="344" y="607" width="72" height="39"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Create an Account" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Mx2-WM-Rf1">
+                                <rect key="frame" x="535" y="607" width="142" height="39"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="E0R-wb-mP9">
+                                <rect key="frame" x="305" y="430" width="150" height="150"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button" image="try-again"/>
+                                <connections>
+                                    <action selector="retry:" destination="MIi-9s-QO6" eventType="touchUpInside" id="CrG-ni-T0E"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JN3-oF-r6f">
+                                <rect key="frame" x="531" y="430" width="150" height="150"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button" image="add-user"/>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="19n-cL-MWu"/>
+                    </view>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="custom" identifier="back" customClass="SlideLeftSegue" customModule="SmylePaymentTerminal" customModuleProvider="target" id="OKa-pE-cYr"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="1gY-g5-DO6" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1458.984375" y="-98.4375"/>
+        </scene>
+        <!--Recognized View Controller-->
+        <scene sceneID="EgA-hB-CLt">
+            <objects>
+                <viewController storyboardIdentifier="greeting" id="mdJ-zv-kfx" customClass="RecognizedViewController" customModule="SmylePaymentTerminal" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="EpO-aq-FHh">
+                        <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Hi There Fred!" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="9" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="s8q-4H-xET">
+                                <rect key="frame" x="302" y="353" width="420" height="62"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="62"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="GXH-uX-go4"/>
+                    </view>
+                    <connections>
+                        <outlet property="greetingLabel" destination="s8q-4H-xET" id="tSZ-27-iDe"/>
+                        <segue destination="nF7-Bl-XJ2" kind="custom" identifier="cards" customClass="SlideLeftSegue" customModule="SmylePaymentTerminal" customModuleProvider="target" id="jPM-Cs-iJX"/>
+                        <segue destination="SfM-Vi-C0S" kind="custom" identifier="rewards" customClass="SlideLeftSegue" customModule="SmylePaymentTerminal" customModuleProvider="target" id="ayn-qI-afS"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="1Qw-M3-xCc" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1459" y="652"/>
+        </scene>
+        <!--Loyaly Sign Up View Controller-->
+        <scene sceneID="pzf-ua-abl">
+            <objects>
+                <viewController id="SfM-Vi-C0S" customClass="LoyalySignUpViewController" customModule="SmylePaymentTerminal" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="W9i-Yh-8Go">
+                        <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="7rS-z2-U0a" customClass="contentView" customModule="SmylePaymentTerminal" customModuleProvider="target">
+                                <rect key="frame" x="258" y="63" width="509" height="642"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Register for Taybucks Rewards?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qOw-JH-SX1">
+                                        <rect key="frame" x="26" y="27" width="457" height="64"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="30"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Taybucks will have access to" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gAL-Bg-fb1">
+                                        <rect key="frame" x="26" y="99" width="441" height="21"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="21"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="px5-0n-lta" customClass="RoundedButton" customModule="SmylePaymentTerminal" customModuleProvider="target">
+                                        <rect key="frame" x="26" y="534" width="215" height="68"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" title="Yes">
+                                            <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="color">
+                                                <color key="value" red="0.21960784310000001" green="0.73333333329999995" blue="0.56862745100000001" alpha="1" colorSpace="calibratedRGB"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornRad">
+                                                <real key="value" value="15"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="yes:" destination="SfM-Vi-C0S" eventType="touchUpInside" id="1eC-X9-FpF"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mmk-lF-vGb" customClass="RoundedButton" customModule="SmylePaymentTerminal" customModuleProvider="target">
+                                        <rect key="frame" x="259" y="534" width="215" height="68"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" title="No">
+                                            <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="color">
+                                                <color key="value" red="0.85043728350000003" green="0.21816034619999999" blue="0.15920260550000001" alpha="1" colorSpace="calibratedRGB"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornRad">
+                                                <real key="value" value="15"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="no:" destination="SfM-Vi-C0S" eventType="touchUpInside" id="cWn-yk-KK0"/>
+                                        </connections>
+                                    </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Your E-Mail Address" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="00k-BJ-w9P">
+                                        <rect key="frame" x="170" y="193" width="177" height="24"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Your Phone Number" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jVY-t2-6hM">
+                                        <rect key="frame" x="159" y="380" width="174" height="24"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Your Full Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="szQ-vW-nUa">
+                                        <rect key="frame" x="181" y="278" width="131" height="24"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="color">
+                                        <color key="value" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornRad">
+                                        <real key="value" value="25"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="0.21960784310000001" green="0.73333333329999995" blue="0.56862745100000001" alpha="1" colorSpace="calibratedRGB"/>
+                        <viewLayoutGuide key="safeArea" id="cbM-NM-xRB"/>
+                    </view>
+                    <connections>
+                        <segue destination="9c6-Yg-dCk" kind="custom" identifier="enrolled" customClass="SlideLeftSegue" customModule="SmylePaymentTerminal" customModuleProvider="target" id="W9y-ga-9r2"/>
+                        <segue destination="2y5-wM-ibb" kind="custom" identifier="cancelled" customClass="SlideLeftSegue" customModule="SmylePaymentTerminal" customModuleProvider="target" id="SHE-lO-O2R"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="8bZ-zG-Fra" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="14.648437499999998" y="2809.375"/>
+        </scene>
+        <!--Payment View Controller-->
+        <scene sceneID="DTD-sk-gci">
+            <objects>
+                <viewController storyboardIdentifier="smile" useStoryboardIdentifierAsRestorationIdentifier="YES" id="nF7-Bl-XJ2" customClass="PaymentViewController" customModule="SmylePaymentTerminal" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="E7K-zy-872">
+                        <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Smile to Pay" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6Be-Fw-gfN">
+                                <rect key="frame" x="427" y="56" width="170" height="36"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="30"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="dBo-hf-PVF">
+                                <rect key="frame" x="20" y="469" width="1004" height="249"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="10" id="qGE-Tk-fwC">
+                                    <size key="itemSize" width="362" height="236"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" reuseIdentifier="total" id="67C-t6-pzb" customClass="InvoiceTotalCollectionViewCell" customModule="SmylePaymentTerminal" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="6.5" width="362" height="236"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
+                                            <rect key="frame" x="0.0" y="0.0" width="362" height="236"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kB9-4g-b39" customClass="contentView" customModule="SmylePaymentTerminal" customModuleProvider="target">
+                                                    <rect key="frame" x="0.0" y="0.0" width="362" height="236"/>
+                                                    <subviews>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Total Cost" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hP4-fx-jW9">
+                                                            <rect key="frame" x="23" y="18" width="317" height="40"/>
+                                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                            <fontDescription key="fontDescription" type="boldSystem" pointSize="35"/>
+                                                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="$44.58" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eM8-Eh-QNc">
+                                                            <rect key="frame" x="23" y="66" width="317" height="120"/>
+                                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                            <fontDescription key="fontDescription" type="boldSystem" pointSize="50"/>
+                                                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                    </subviews>
+                                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <userDefinedRuntimeAttributes>
+                                                        <userDefinedRuntimeAttribute type="number" keyPath="cornRad">
+                                                            <real key="value" value="25"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                        <userDefinedRuntimeAttribute type="color" keyPath="color">
+                                                            <color key="value" red="0.21960784310000001" green="0.73333333329999995" blue="0.56862745100000001" alpha="1" colorSpace="calibratedRGB"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                    </userDefinedRuntimeAttributes>
+                                                </view>
+                                            </subviews>
+                                        </view>
+                                        <constraints>
+                                            <constraint firstAttribute="trailing" secondItem="kB9-4g-b39" secondAttribute="trailing" id="Dqh-OA-B6p"/>
+                                            <constraint firstItem="kB9-4g-b39" firstAttribute="leading" secondItem="67C-t6-pzb" secondAttribute="leading" id="Ief-4D-Gdj"/>
+                                            <constraint firstAttribute="bottom" secondItem="kB9-4g-b39" secondAttribute="bottom" id="cDI-po-w9l"/>
+                                            <constraint firstItem="kB9-4g-b39" firstAttribute="top" secondItem="67C-t6-pzb" secondAttribute="top" id="zzE-4n-1nZ"/>
+                                        </constraints>
+                                        <connections>
+                                            <outlet property="priceLabel" destination="eM8-Eh-QNc" id="uaZ-ac-75Z"/>
+                                            <outlet property="totalCost" destination="hP4-fx-jW9" id="nQI-OF-3YT"/>
+                                        </connections>
+                                    </collectionViewCell>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" reuseIdentifier="item" id="vd2-E2-oxx" customClass="InvoiceCollectionViewCell" customModule="SmylePaymentTerminal" customModuleProvider="target">
+                                        <rect key="frame" x="372" y="6.5" width="362" height="236"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
+                                            <rect key="frame" x="0.0" y="0.0" width="362" height="236"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dtb-Wz-ybu" customClass="contentView" customModule="SmylePaymentTerminal" customModuleProvider="target">
+                                                    <rect key="frame" x="0.0" y="0.0" width="362" height="236"/>
+                                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <userDefinedRuntimeAttributes>
+                                                        <userDefinedRuntimeAttribute type="color" keyPath="color">
+                                                            <color key="value" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                        <userDefinedRuntimeAttribute type="number" keyPath="cornRad">
+                                                            <real key="value" value="25"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                    </userDefinedRuntimeAttributes>
+                                                </view>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Cafe Americano" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="cze-a9-UcH">
+                                                    <rect key="frame" x="10" y="9.5" width="317" height="42"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="35"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="$44.58" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AX6-n3-Ovk">
+                                                    <rect key="frame" x="10" y="57.5" width="317" height="120"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="50"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </view>
+                                        <constraints>
+                                            <constraint firstAttribute="bottom" secondItem="dtb-Wz-ybu" secondAttribute="bottom" id="Fpg-J6-HDN"/>
+                                            <constraint firstItem="dtb-Wz-ybu" firstAttribute="leading" secondItem="vd2-E2-oxx" secondAttribute="leading" id="KoC-KH-tQx"/>
+                                            <constraint firstItem="dtb-Wz-ybu" firstAttribute="top" secondItem="vd2-E2-oxx" secondAttribute="top" id="Onj-CA-Drf"/>
+                                            <constraint firstAttribute="trailing" secondItem="dtb-Wz-ybu" secondAttribute="trailing" id="c4Y-Ij-an5"/>
+                                        </constraints>
+                                        <connections>
+                                            <outlet property="itemName" destination="cze-a9-UcH" id="Wm8-e3-RBJ"/>
+                                            <outlet property="priceLabel" destination="AX6-n3-Ovk" id="qmN-Ai-fwE"/>
+                                        </connections>
+                                    </collectionViewCell>
+                                </cells>
+                            </collectionView>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" bounces="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="q9h-b4-8mP">
+                                <rect key="frame" x="20" y="138" width="1004" height="299"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <collectionViewLayout key="collectionViewLayout" id="VdJ-WF-cWm" customClass="LNZCarouselCollectionViewLayout" customModule="SmylePaymentTerminal" customModuleProvider="target"/>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="card" id="OU3-7u-whh" customClass="CardCollectionViewCell" customModule="SmylePaymentTerminal" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="253"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="253"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cdN-nv-Mm1">
+                                                    <rect key="frame" x="0.0" y="0.0" width="414" height="253"/>
+                                                    <subviews>
+                                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="scotia-amex" translatesAutoresizingMaskIntoConstraints="NO" id="Ab8-iM-wIh">
+                                                            <rect key="frame" x="8" y="8" width="398" height="237"/>
+                                                        </imageView>
+                                                    </subviews>
+                                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <constraints>
+                                                        <constraint firstItem="Ab8-iM-wIh" firstAttribute="top" secondItem="cdN-nv-Mm1" secondAttribute="top" constant="8" id="4F1-Xe-r3S"/>
+                                                        <constraint firstItem="Ab8-iM-wIh" firstAttribute="leading" secondItem="cdN-nv-Mm1" secondAttribute="leading" constant="8" id="IKc-Vf-aaa"/>
+                                                        <constraint firstItem="Ab8-iM-wIh" firstAttribute="top" secondItem="cdN-nv-Mm1" secondAttribute="top" constant="8" id="IaW-Pr-Mvq"/>
+                                                        <constraint firstAttribute="bottom" secondItem="Ab8-iM-wIh" secondAttribute="bottom" constant="8" id="gQP-Hb-h5Q"/>
+                                                        <constraint firstAttribute="trailing" secondItem="Ab8-iM-wIh" secondAttribute="trailing" constant="8" id="lLB-8s-yd5"/>
+                                                        <constraint firstItem="Ab8-iM-wIh" firstAttribute="leading" secondItem="cdN-nv-Mm1" secondAttribute="leading" constant="8" id="lsR-Mg-ypY"/>
+                                                        <constraint firstAttribute="bottom" secondItem="Ab8-iM-wIh" secondAttribute="bottom" constant="8" id="p0T-eq-liJ"/>
+                                                        <constraint firstAttribute="trailing" secondItem="Ab8-iM-wIh" secondAttribute="trailing" constant="8" id="xP6-Iw-Hel"/>
+                                                    </constraints>
+                                                </view>
+                                            </subviews>
+                                        </view>
+                                        <constraints>
+                                            <constraint firstItem="cdN-nv-Mm1" firstAttribute="top" secondItem="OU3-7u-whh" secondAttribute="top" id="1cq-va-pWf"/>
+                                            <constraint firstAttribute="trailing" secondItem="cdN-nv-Mm1" secondAttribute="trailing" id="OlF-vs-FKB"/>
+                                            <constraint firstItem="cdN-nv-Mm1" firstAttribute="leading" secondItem="OU3-7u-whh" secondAttribute="leading" id="QEV-Nw-7S7"/>
+                                            <constraint firstAttribute="bottom" secondItem="cdN-nv-Mm1" secondAttribute="bottom" id="yva-yf-jHy"/>
+                                        </constraints>
+                                        <size key="customSize" width="414" height="253"/>
+                                        <connections>
+                                            <outlet property="image" destination="cdN-nv-Mm1" id="27w-Gm-wgz"/>
+                                            <outlet property="imageView" destination="Ab8-iM-wIh" id="ykS-wV-FgL"/>
+                                        </connections>
+                                    </collectionViewCell>
+                                </cells>
+                            </collectionView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="cgu-EX-HFC"/>
+                    </view>
+                    <connections>
+                        <outlet property="cvCollectionView" destination="q9h-b4-8mP" id="Re5-Af-EuS"/>
+                        <outlet property="invoiceCollectionView" destination="dBo-hf-PVF" id="UXa-QQ-Q7J"/>
+                        <segue destination="ZcN-Xo-goA" kind="custom" identifier="paid" customClass="SlideLeftSegue" customModule="SmylePaymentTerminal" customModuleProvider="target" id="TYs-rP-89F"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="cCb-Fi-Xl4" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="14.648437499999998" y="1375"/>
+        </scene>
+        <!--Payment Confirmation View Controller-->
+        <scene sceneID="i8l-PF-Ald">
+            <objects>
+                <viewController id="ZcN-Xo-goA" customClass="PaymentConfirmationViewController" customModule="SmylePaymentTerminal" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="2an-lU-kTY">
+                        <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="You Paid! Have a Great Day" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gza-qT-FsG">
+                                <rect key="frame" x="325" y="366" width="375" height="36"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="30"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="0fb-5h-7M1"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="fpC-Xj-kzg"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="custom" identifier="reset" customClass="SlideRightSegue" customModule="SmylePaymentTerminal" customModuleProvider="target" id="vyR-ah-IZ2"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="jTT-iJ-FPg" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="15" y="2085"/>
+        </scene>
+        <!--Enrollment Confirmed View Controller-->
+        <scene sceneID="0uS-fr-D8u">
+            <objects>
+                <viewController id="9c6-Yg-dCk" customClass="EnrollmentConfirmedViewController" customModule="SmylePaymentTerminal" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="jMk-kS-3sh">
+                        <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="You've Enrolled!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="M13-3F-z9q">
+                                <rect key="frame" x="401" y="366" width="223" height="36"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="30"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="QF8-uN-fud"/>
+                    </view>
+                    <connections>
+                        <segue destination="mdJ-zv-kfx" kind="custom" identifier="cards" customClass="SlideRightSegue" customModule="SmylePaymentTerminal" customModuleProvider="target" id="GOq-gg-TBX"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="wxe-fO-jc9" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="766" y="2809"/>
+        </scene>
+        <!--Enrollment Cancelled View Controller-->
+        <scene sceneID="p2V-VG-Xn1">
+            <objects>
+                <viewController id="2y5-wM-ibb" customClass="EnrollmentCancelledViewController" customModule="SmylePaymentTerminal" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="IWW-3b-n2q">
+                        <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Enrollment Cancelled" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Aca-6e-7Fg">
+                                <rect key="frame" x="363" y="366" width="298" height="36"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="30"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="uai-zo-pVo"/>
+                    </view>
+                    <connections>
+                        <segue destination="mdJ-zv-kfx" kind="custom" identifier="cards" customClass="SlideRightSegue" customModule="SmylePaymentTerminal" customModuleProvider="target" id="F2o-G9-3PR"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="SnI-by-Jhd" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="765.8203125" y="3519.53125"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="idP-eX-Twq">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" navigationBarHidden="YES" id="vbO-SF-3uh" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="g1D-jc-rq9">
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="mfA-V6-vFw"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="pJn-el-rrY" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="14.648437499999998" y="651.5625"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="add-user" width="256" height="256"/>
+        <image name="checkmark" width="256" height="256"/>
+        <image name="crossmark" width="256" height="256"/>
+        <image name="scotia-amex" width="4026" height="2545"/>
+        <image name="try-again" width="256" height="256"/>
+    </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="GOq-gg-TBX"/>
+        <segue reference="vyR-ah-IZ2"/>
+    </inferredMetricsTieBreakers>
+</document>
