@@ -64,9 +64,10 @@ class RecognizedViewController: UIViewController, MessagingProtocol {
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if let des = segue.destination as? PaymentViewController {
             var tempCards = user?.cards
-            tempCards![0].from = "Visa"
-            tempCards![1].from = "Mastercard"
-            tempCards![2].from = "American Express"
+        
+                tempCards![0].from = "Visa"
+                tempCards![1].from = "Mastercard"
+                tempCards![2].from = "American Express"
             des.cards = tempCards
             des.jsonData = message
         } else if let des = segue.destination as? LoyalySignUpViewController {
